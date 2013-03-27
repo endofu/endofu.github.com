@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Gabor's blog]]></title>
   <link href="http://endofu.github.com/atom.xml" rel="self"/>
   <link href="http://endofu.github.com/"/>
-  <updated>2013-03-27T19:47:50+01:00</updated>
+  <updated>2013-03-27T22:06:52+01:00</updated>
   <id>http://endofu.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Gabor Szalatnyai]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[First post]]></title>
+    <link href="http://endofu.github.com/blog/2013/03/27/first-post/"/>
+    <updated>2013-03-27T21:30:00+01:00</updated>
+    <id>http://endofu.github.com/blog/2013/03/27/first-post</id>
+    <content type="html"><![CDATA[<h3>Title of the post</h3>
+
+<h4>TODO</h4>
+
+<p>-[ ] First
+-[x] Second
+-[ ] Third</p>
+
+<hr />
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">def</span> <span class="n">optionAdd</span><span class="o">(</span><span class="n">x</span><span class="k">:</span><span class="kt">Option</span><span class="o">[</span><span class="kt">Int</span><span class="o">],</span> <span class="n">y</span><span class="k">:</span><span class="kt">Option</span><span class="o">[</span><span class="kt">Int</span><span class="o">])</span><span class="k">:</span><span class="kt">Option</span><span class="o">[</span><span class="kt">Int</span><span class="o">]</span> <span class="k">=</span>
+</span><span class='line'>  <span class="k">for</span><span class="o">(</span><span class="n">xx</span> <span class="k">&lt;-</span> <span class="n">x</span><span class="o">;</span> <span class="n">yy</span> <span class="k">&lt;-</span> <span class="n">y</span><span class="o">)</span> <span class="k">yield</span> <span class="n">xx</span><span class="o">+</span><span class="n">yy</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
 </feed>
