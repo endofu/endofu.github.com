@@ -4,7 +4,7 @@
   <title><![CDATA[Category: git | Gabor's blog]]></title>
   <link href="http://endofu.github.com/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://endofu.github.com/"/>
-  <updated>2013-03-27T23:27:53+01:00</updated>
+  <updated>2013-03-28T01:07:19+01:00</updated>
   <id>http://endofu.github.com/</id>
   <author>
     <name><![CDATA[Gabor Szalatnyai]]></name>
@@ -19,6 +19,8 @@
     <updated>2013-03-27T21:30:00+01:00</updated>
     <id>http://endofu.github.com/blog/2013/03/27/first-post</id>
     <content type="html"><![CDATA[<h3>Setup a blog with Octopress</h3>
+
+<p>After spending a lot of time recently working on the BBH Labs blog that is running on Wordpress, I decided that I want a lean bloggin engine. Something that doesn't necessaryly built for normal users.</p>
 ]]></content>
   </entry>
   
