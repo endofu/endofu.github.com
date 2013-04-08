@@ -3,12 +3,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>robotify.me - Gabor Szalatnyai</title>
+	<title>Table football replay system - Gabor Szalatnyai</title>
 	<meta name="author" content="Gabor Szalatnyai">
 
 	
-	<meta name="description" content="robotify.me - Live site
-BBH Labs posts about the project At BBH Labs we wanted to work on a project that would reflect people’s social behaviour &hellip;">
+	<meta name="description" content="Michael&#8217;s documentation about the project Michael is a designer who likes playing table football and experimenting with Arduinos. He decided &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -76,21 +75,18 @@ BBH Labs posts about the project At BBH Labs we wanted to work on a project that
 	
 	<div id="content" class="inner"><article class="page">
     
-    <h1 class="title">robotify.me</h1>
+    <h1 class="title">Table Football Replay System</h1>
     
-    <div class="entry-content"><p><img src="/images/robotifyme.png" title="robotify.me" alt="" /></p>
+    <div class="entry-content"><p><img src="/images/tablefootball.png" title="Table football replay system" alt="" /></p>
 
 <ul>
-<li><a href="https://www.robotify-me">robotify.me - Live site</a></li>
-<li><a href="http://bbh-labs.com/robotify-me">BBH Labs posts about the project</a></li>
+<li><a href="http://portfolio.michaelrobinson.info/table-football-replay">Michael&#8217;s documentation about the project</a></li>
 </ul>
 
 
-<p><em>At BBH Labs we wanted to work on a project that would reflect people’s social behaviour back to them in an engaging way. We also wanted to try a different team structure and process on a bigger Labs experiment. We came up with robotify.me.</em></p>
+<p><em>Michael is a designer who likes playing table football and experimenting with Arduinos. He decided to put two light sensors into the football table and connected them with an Arduino so he could detect goals. He asked me if we could hook this up with a webcam and build a replay system</em></p>
 
-<p><em>robotify.me analyses people’s social personae and send them back something more interesting than the Klout score - a little robot who changes weekly.</em></p>
-
-<p>It’s a Django project on Google App Engine. The front-end is a responsive single-page web application built with backbone.js, require.js, handlebars and Twitter’s Bootstrap. It communicates with the backend through a little API that is planned to be opened in the future. At the moment it uses data from Facebook, Twitter and Foursquare but it’s been desinged in a way that allows adding more platforms easily. I used PIL to compose the robots on the backend and to find out the dominant colours of the user’s profile images. The data collection, parsing, textual and quantitative analysis was a very good opportunity to practice Python’s functional features, like lambdas, list comprehensions and generators.</p>
+<p>I used a PS-Eye that provided relatively good quality image on 60fps and it had a hacked driver for Windows with a very simple API that allowed me to get images from the camera. I buffered the last 3 seconds in an openFrameworks sketch that was listening to the Arduino on a serial connection and, as it triggered the goal signal, it fed the contents of the buffer to ffmpeg that saved it out as a video file and then replayed it on the screen. If I used all the images on 30fps it showed a half speed playback. After some tweaking, ffmpeg outputted different formats (MOV, FLV) so I could control a Flash movie via a socket that counted the score and played flashy animations over the replay.</p>
 </div>
 </article>
 
